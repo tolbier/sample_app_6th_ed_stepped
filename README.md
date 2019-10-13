@@ -57,4 +57,10 @@ Git PUSH to Heroku
     
 DONE!
     
+### Added Gems for Rails Tutorial
+
+* On this Commit: 
+  * Gemfile: 
+    * added gems for Rails Tutorial (:test)
+
     
