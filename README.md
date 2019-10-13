@@ -1,24 +1,12 @@
-# README
+# Rails (6) Tutorial (6th Edition)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Chapter 3. Mostly Static Pages
 
-Things you may want to cover:
+### Sample App init
+    $ rails _6.0.0_ new sample_app
+    $ cd sample_app
+    $ rails server
+(browse for <http://localhost:3000> )
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    
+         
