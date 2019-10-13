@@ -116,4 +116,11 @@ Generate Integration Test for Site Layout
  
     $ rails generate integration_test site_layout
     
+### 5.4.1 Users controller    
+
+Generate Users Controller
+
+    $ rails generate controller Users new
+    
+
     
