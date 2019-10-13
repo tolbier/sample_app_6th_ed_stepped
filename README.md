@@ -93,5 +93,21 @@ Generate StaticPagesController
     $ rails db:migrate # Necessary on some systems 
     $ rails test
 
+### 3.6.2 Automated tests with Guard
+
+Generate init **Guardfile** 
+
+    $ bundle exec guard init
     
+Also **Guardfile** needs some configuration (added on this commit)
+
+Guard is watching permanently for tests 
+
+To execute Guard (on a terminal)
+
+    $ bundle exec guard
+    
+    $ bin/spring stop # Try this if the tests mysteriously start failing. 
+    $ bundle exec guard
+
     
