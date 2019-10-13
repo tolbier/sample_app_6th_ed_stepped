@@ -87,6 +87,11 @@ DONE!
 Generate StaticPagesController 
     
     $ rails generate controller StaticPages home help
+    
+### 3.3.1 Our first test
+
+    $ rails db:migrate # Necessary on some systems 
+    $ rails test
 
     
     
