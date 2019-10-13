@@ -83,4 +83,10 @@ DONE!
   * Gemfile: 
     * added gems for Rails Tutorial (:test)
 
+### 3.2.1 Generated static pages
+Generate StaticPagesController 
+    
+    $ rails generate controller StaticPages home help
+
+    
     
