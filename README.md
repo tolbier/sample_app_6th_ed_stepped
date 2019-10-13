@@ -110,4 +110,10 @@ To execute Guard (on a terminal)
     $ bin/spring stop # Try this if the tests mysteriously start failing. 
     $ bundle exec guard
 
+### 5.3.4 Layout link tests
+
+Generate Integration Test for Site Layout
+ 
+    $ rails generate integration_test site_layout
+    
     
