@@ -122,4 +122,18 @@ Generate Users Controller
     $ rails generate controller Users new
     
 
+### 6.1.1 Database migrations 
+
+Create User model
+
+    $ rails generate model User name:string email:string
+
+Do changes effective on database
+    
+    $ rails db:migrate
+    
+Also, we could rollback changes:
+
+    $ rails db:rollback
+
     
