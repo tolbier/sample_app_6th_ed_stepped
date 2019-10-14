@@ -225,3 +225,9 @@ Execute Migrate
 
     $ rails db:migrate
     
+    
+### 6.3.2 User has secure password 
+    
+    $ rails generate migration add_password_digest_to_users password_digest:string
+
+    $ rails db:migrate

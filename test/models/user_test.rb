@@ -1,29 +1,37 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   def setup
-    @user = User.new(name: "Example User", email: "user@example.com")
+    @user =
+      User.new(
+        name: 'Example User',
+        email: 'user@example.com',
+        password: 'foobar',
+        password_confirmation: 'foobar'
+      )
   end
-  test "should be valid" do
+  test 'should be valid' do
     assert @user.valid?
   end
-  test "name should be present" do
-    @user.name = "    "
+  test 'name should be present' do
+    @user.name = '    '
     assert_not @user.valid?
   end
-  test "email should be present" do
-    @user.email = "    "
+  test 'email should be present' do
+    @user.email = '    '
     assert_not @user.valid?
   end
-  test "name should not be too long" do
-    @user.name = "a" * 51
+  test 'name should not be too long' do
+    @user.name = 'a' * 51
     assert_not @user.valid?
   end
-  test "email should not be too long" do
-    @user.email = "a" * 244 + "@example.com"
+  test 'email should not be too long' do
+    @user.email = 'a' * 244 + '@example.com'
     assert_not @user.valid?
   end
-  test "email validation should accept valid addresses" do
+  test 'email validation should accept valid addresses' do
     valid_addresses =
       %w[
         user@example.com
@@ -37,7 +45,7 @@ class UserTest < ActiveSupport::TestCase
       assert @user.valid?, "#{valid_address.inspect} should be valid"
     end
   end
-  test "email validation should reject invalid addresses" do
+  test 'email validation should reject invalid addresses' do
     invalid_addresses =
       %w[
         user@example,com
@@ -51,7 +59,7 @@ class UserTest < ActiveSupport::TestCase
       assert_not @user.valid?, "#{invalid_address.inspect} should be invalid"
     end
   end
-  test "email addresses should be unique" do
+  test 'email addresses should be unique' do
     duplicate_user = @user.dup
     @user.save
     assert_not duplicate_user.valid?
