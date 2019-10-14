@@ -199,4 +199,21 @@ Run Integration Tests
     
     $ rails test:integration
     
+### 6.2.5 Uniqueness validation
+ 
+Create a empty migration 
+
+    $ rails generate migration add_index_to_users_email
+    
+Fill it with something like
+
+    class AddIndexToUsersEmail < ActiveRecord::Migration[6.0]
+        def change
+            add_index :users, :email, unique: true
+        end
+    end
+    
+Execute Migrate
+
+    $ rails db:migrate
     
