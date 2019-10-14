@@ -75,6 +75,16 @@ Git PUSH to Heroku
     $ git push heroku master
     
 DONE!
+
+### Other Heroku Commands 
+
+Execute **rails db:migrate** on Heroku
+
+    $ heroku run rails db:migrate
+    
+Enter into Sandbox Console    
+
+    $ heroku run rails console --sandbox
     
 ### Added Gems for Rails Tutorial
 
@@ -159,6 +169,12 @@ Entering into "Sandbox Console"
     foo = User.create(name: "Foo", email: "foo@bar.com")
     foo.destroy
 
+### Other Rails Console commands
+
+    $ rails console
+    $ rails console test
+    $ rails console --sandbox
+           
 ### 6.1.4 Finding user objects    
 
     User.find(1) 
