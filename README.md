@@ -135,6 +135,14 @@ Do changes effective on database
 Also, we could rollback changes:
 
     $ rails db:rollback
+    
+Other rails db commands: 
+
+    $ rails db:reset                    #Recreate all schemas (DEVELOPMENT & TEST)
+    $ rails db:migrate                  #Executes DB scripts on DEVELOPMENT environment 
+    $ rails db:migrate RAILS_ENV=test   #Executes DB scripts on TEST environment
+
+
 
 ### 6.1.3 Creating user objects
 
