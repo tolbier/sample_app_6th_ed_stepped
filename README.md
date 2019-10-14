@@ -136,4 +136,53 @@ Also, we could rollback changes:
 
     $ rails db:rollback
 
+### 6.1.3 Creating user objects
+
+(Playing with ActiveRecord) 
+Entering into "Sandbox Console"
+
+    $ rails console --sandbox
+    
+    user = User.new(name: "Michael Hartl", email: "michael@example.com")
+    user.save
+    
+    User.create(name: "A Nother", email: "another@example.org")
+
+    foo = User.create(name: "Foo", email: "foo@bar.com")
+    foo.destroy
+
+### 6.1.4 Finding user objects    
+
+    User.find(1) 
+    User.find_by(email: "michael@example.com")
+
+    User.first
+    
+    User.all
+   
+    
+### 6.1.5 Updating user objects
+
+Updating user
+    
+    user.email = "mhartl@example.net"
+    => "mhartl@example.net"
+    user.save
+    
+or
+
+    user.update(name: "The Dude", email: "dude@abides.org")
+   
+or just for one attribute 
+
+    user.update_attribute(:name, "El Duderino")
+    
+Reloading data from db 
+
+    user.email 
+    => "mhartl@example.net" 
+    user.email = "foo@bar.com" 
+    => "foo@bar.com" 
+    user.reload.email => "mhartl@example.net"
+    
     
