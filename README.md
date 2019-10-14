@@ -185,4 +185,18 @@ Reloading data from db
     => "foo@bar.com" 
     user.reload.email => "mhartl@example.net"
     
+### 6.2.1 A validity test
+
+Run All Tests
+
+    $ rails test
+
+Run Model Tests
+
+    $ rails test:models 
+    
+Run Integration Tests
+    
+    $ rails test:integration
+    
     
