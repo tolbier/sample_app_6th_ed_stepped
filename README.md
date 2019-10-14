@@ -1,7 +1,7 @@
 # Rails (6) Tutorial (6th Edition)
 
 Links: 
-* <https://ancient-sea-09989.herokuapp.com/>
+* <https://enigmatic-garden-86440.herokuapp.com>
 
 ## Getting started
 To get started with the app, clone the repo and then install the needed gems:
@@ -69,7 +69,6 @@ Login Interactively with:
 Create Heroku Repo  with:
 
     $ heroku create
-It will create <https://ancient-sea-09989.herokuapp.com/>
 
 Git PUSH to Heroku 
 
