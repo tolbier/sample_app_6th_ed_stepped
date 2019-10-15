@@ -148,7 +148,8 @@ Also, we could rollback changes:
     
 Other rails db commands: 
 
-    $ rails db:reset                    #Recreate all schemas (DEVELOPMENT & TEST)
+    $ rails db:reset                    #Recreate all schemas (DEVELOPMENT & TEST) 
+    $ rails db:migrate:reset            #Same than previous
     $ rails db:migrate                  #Executes DB scripts on DEVELOPMENT environment 
     $ rails db:migrate RAILS_ENV=test   #Executes DB scripts on TEST environment
 
