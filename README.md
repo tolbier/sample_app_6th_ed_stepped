@@ -268,3 +268,6 @@ Generate empty Integration Test
 Generate Sessions Controller 
 
     $ rails generate controller Sessions new
+    
+### 8.1.5 A flash test    
+    $ rails generate integration_test users_login
