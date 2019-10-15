@@ -271,3 +271,11 @@ Generate Sessions Controller
     
 ### 8.1.5 A flash test    
     $ rails generate integration_test users_login
+    
+### 8.2.3 Changing the layout links
+
+Install both jQuery and Bootstrap 
+
+    $ yarn add jquery@3.4.1 bootstrap@3.4.1
+
+    
