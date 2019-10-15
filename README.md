@@ -263,4 +263,8 @@ Generate empty Integration Test
  
     $ rails generate integration_test users_signup
     
-    
+### 8.1.1 Sessions controller 
+
+Generate Sessions Controller 
+
+    $ rails generate controller Sessions new
