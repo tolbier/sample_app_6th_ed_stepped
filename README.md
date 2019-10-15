@@ -247,3 +247,12 @@ Execute Migrate
     $ rails generate migration add_password_digest_to_users password_digest:string
 
     $ rails db:migrate
+    
+### 7.1.3 Debugger
+
+    If we want to "Debug" we can use the IDE debugger, but also use the **debugger** command.
+    
+    If we insert **debuger** it will stop on that line, opening a smart console where we can do commands
+    
+    Command **continue* will continue the execution of the program
+    
