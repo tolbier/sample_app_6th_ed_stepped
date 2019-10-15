@@ -255,4 +255,11 @@ Execute Migrate
     If we insert **debuger** it will stop on that line, opening a smart console where we can do commands
     
     Command **continue* will continue the execution of the program
+
+### 7.3.4 A test for invalid submission
+
+Generate empty Integration Test
+ 
+    $ rails generate integration_test users_signup
+    
     
