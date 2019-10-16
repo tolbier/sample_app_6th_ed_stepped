@@ -314,4 +314,10 @@ And call the seeds.rb script with:
     $ rails db:seed
     
     
+### 10.3.4 Users index test
+
+Generate Integration Test "users_index"
+
+    $ rails generate integration_test users_index
+    
     
