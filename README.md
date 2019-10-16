@@ -278,4 +278,13 @@ Install both jQuery and Bootstrap
 
     $ yarn add jquery@3.4.1 bootstrap@3.4.1
 
+### 9.1.1 Remember token and digest
+
+Generate migration to add **remember_digest**
+
+    $ rails generate migration add_remember_digest_to_users remember_digest:string
+    
+    $ rails db:migrate
+    
+    
     
