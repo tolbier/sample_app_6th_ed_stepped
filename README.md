@@ -286,5 +286,15 @@ Generate migration to add **remember_digest**
     
     $ rails db:migrate
     
+### 9.4 Conclusion
+
+If there are db changes due to migrate into Heroku Db, it is recommended
+to do it like this
+
+    $ heroku maintenance:on
+    $ git push heroku
+    $ heroku run rails db:migrate
+    $ heroku maintenance:off
+    
     
     
