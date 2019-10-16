@@ -296,5 +296,10 @@ to do it like this
     $ heroku run rails db:migrate
     $ heroku maintenance:off
     
+### 10.1.3 Testing unsuccessful edits 
+
+Generate Integration Test for "Users_Edit"
+ 
+    $ rails generate integration_test users_edit
     
     
