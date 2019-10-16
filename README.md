@@ -320,4 +320,10 @@ Generate Integration Test "users_index"
 
     $ rails generate integration_test users_index
     
+Generate Migration to add admin:boolean to users 
+
+    $ rails generate migration add_admin_to_users admin:boolean
     
+    $ rails db:migrate
+  
+  
