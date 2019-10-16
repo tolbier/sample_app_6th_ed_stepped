@@ -8,6 +8,8 @@ gem 'rails', '~> 6.0.0'
 
 gem 'bcrypt', '~> 3.1'
 
+gem 'faker',  '2.1.2'
+
 # Use Bootstrap CSS
 gem 'bootstrap-sass', '3.4.1'
 

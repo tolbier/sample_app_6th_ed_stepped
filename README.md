@@ -302,4 +302,16 @@ Generate Integration Test for "Users_Edit"
  
     $ rails generate integration_test users_edit
     
+### 10.3.2 Sample users
+
+After update **Gemfile**:
+
+    $ bundle install
+    
+And call the seeds.rb script with: 
+
+    $ rails db:migrate:reset 
+    $ rails db:seed
+    
+    
     
