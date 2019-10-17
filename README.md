@@ -326,4 +326,11 @@ Generate Migration to add admin:boolean to users
     
     $ rails db:migrate
   
-  
+ ### 10.5 Conclusion
+
+    $ heroku maintenance:on
+    $ git push heroku
+    $ heroku pg:reset DATABASE
+    $ heroku run rails db:migrate
+    $ heroku run rails db:seed
+    $ heroku maintenance:off
