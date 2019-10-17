@@ -339,4 +339,10 @@ Generate Migration to add admin:boolean to users
 
     $ rails generate controller AccountActivations
     
+### 11.1.2 Account activation data model
+    
+    $ rails generate migration add_activation_to_users activation_digest:string activated:boolean activated_at:datetime
+
+    $ rails db:migrate:reset
+    $ rails db:seed
     
