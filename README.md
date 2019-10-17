@@ -358,3 +358,7 @@ Add SendGrid to Heroku (to send email)
     $ heroku addons:create sendgrid:starter
     
 (restart database as in **10.5 Conclusion**)
+
+### 12.1.1Password resets controller
+
+    $ rails generate controller PasswordResets new edit --no-test-framework
