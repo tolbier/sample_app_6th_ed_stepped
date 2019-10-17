@@ -346,3 +346,8 @@ Generate Migration to add admin:boolean to users
     $ rails db:migrate:reset
     $ rails db:seed
     
+    
+### 11.2.1 Mailer templates
+
+    $ rails generate mailer UserMailer account_activation password_reset
+    
