@@ -362,3 +362,10 @@ Add SendGrid to Heroku (to send email)
 ### 12.1.1Password resets controller
 
     $ rails generate controller PasswordResets new edit --no-test-framework
+    
+    
+### 12.1.2 New password resets
+    
+    $ rails generate migration add_reset_to_users reset_digest:string reset_sent_at:datetime    
+    
+    
