@@ -334,3 +334,9 @@ Generate Migration to add admin:boolean to users
     $ heroku run rails db:migrate
     $ heroku run rails db:seed
     $ heroku maintenance:off
+    
+### 11.1.1 Account activations controller    
+
+    $ rails generate controller AccountActivations
+    
+    
