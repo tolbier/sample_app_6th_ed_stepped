@@ -351,3 +351,8 @@ Generate Migration to add admin:boolean to users
 
     $ rails generate mailer UserMailer account_activation password_reset
     
+### 11.4 Email in production
+
+Add SendGrid to Heroku (to send email)  
+
+    $ heroku addons:create sendgrid:starter
