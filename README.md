@@ -380,4 +380,11 @@ After all changes
  
     $ rails db:migrate
     
+### 13.2.1 Rendering microposts 
+
+    $ rails db:migrate:reset 
+    $ rails db:seed
+    
+    $ rails generate controller Microposts
+
     
