@@ -372,4 +372,12 @@ Add SendGrid to Heroku (to send email)
 
     $ rails generate integration_test password_resets
     
+### 13.1.1 The basic model
+
+    $ rails generate model Micropost content:text user:references
+
+After all changes
+ 
+    $ rails db:migrate
+    
     
