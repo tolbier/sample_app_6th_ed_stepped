@@ -396,3 +396,6 @@ After all changes
     $ rails active_storage:install
     $ rails db:migrate
     
+### 13.4.3 Image resizing
+  
+    $ sudo apt-get -y install imagemagick
