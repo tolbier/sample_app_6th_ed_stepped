@@ -390,3 +390,9 @@ After all changes
 ### 13.2.3 Profile micropost tests
     
     $ rails generate integration_test users_profile
+    
+### 13.4.1 Basic image upload
+
+    $ rails active_storage:install
+    $ rails db:migrate
+    
