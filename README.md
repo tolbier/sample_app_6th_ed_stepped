@@ -387,4 +387,6 @@ After all changes
     
     $ rails generate controller Microposts
 
+### 13.2.3 Profile micropost tests
     
+    $ rails generate integration_test users_profile
