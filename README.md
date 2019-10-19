@@ -399,3 +399,8 @@ After all changes
 ### 13.4.3 Image resizing
   
     $ sudo apt-get -y install imagemagick
+    
+### 14.1.1 A problem with the data model (and a solution) 
+
+
+    $ rails generate model Relationship follower_id:integer followed_id:integer
